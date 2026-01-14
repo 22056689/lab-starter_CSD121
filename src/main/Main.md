@@ -8,6 +8,9 @@ Enter your name here: Thomas Leonard
 
 ## The best animals
 
-1. Panda
-2. Sloth
-3. Owl Monkey
+1. Axolotl
+2. BonoboBonobo
+3. Capybara
+4. Panda
+5. Sloth
+6. Owl Monkey
