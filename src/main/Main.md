@@ -8,6 +8,6 @@ Enter your name here: Thomas Leonard
 
 ## The best animals
 
-1. Cuttlefish
-2. Platypus
-3. Three-toed sloth
+1. Panda
+2. Sloth
+3. Owl Monkey
