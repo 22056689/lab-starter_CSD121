@@ -13,12 +13,12 @@ class PositionTest {
     public void testNumbers() throws ParseException {
 
         Position pos = (Position.parse("12"));
-        assertSame(Row.Top, pos.row(), "string 12 row should be parased as Top");
-        assertSame(Col.Middle, pos.col(), "string 12 col should be parased as Middle");
+        assertSame(Row.Top, pos.row(), "string 12 row should be parsed as Top");
+        assertSame(Col.Middle, pos.col(), "string 12 col should be parsed as Middle");
 
         Position pos_2 = (Position.parse("2,3"));
-        assertSame(Row.Middle, pos_2.row(), "row for String 2,3 should be parased as Middle");
-        assertSame(Col.Right, pos_2.col(), "column for string 2,3 should be parased as Right");
+        assertSame(Row.Middle, pos_2.row(), "row for String 2,3 should be parsed as Middle");
+        assertSame(Col.Right, pos_2.col(), "column for string 2,3 should be parsed as Right");
 
     }
 
@@ -33,8 +33,8 @@ class PositionTest {
         assertEquals(Position.parse("MiDDle LeFT"), middleLeft,"MiDDle LeFT should be parsed as Middle Left");
 
     }
-
-    @Test// This Sucks
-    public void
+//I hate Tests, but it's the easiest lab so far
+   // @Test
+   // public void
 
 }
