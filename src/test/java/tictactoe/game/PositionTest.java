@@ -33,7 +33,7 @@ class PositionTest {
         assertEquals(Position.parse("MiDDle LeFT"), middleLeft,"MiDDle LeFT should be parsed as Middle Left");
 
     }
-//I hate Tests, but it's the easiest lab so far
+//I hate Tests, but it's the easiest lab so far (Subatomic marks here I come)
    // @Test
    // public void
 

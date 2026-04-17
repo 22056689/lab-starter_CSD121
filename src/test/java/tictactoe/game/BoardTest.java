@@ -25,7 +25,7 @@ class BoardTest {
         assertNotNull(boardTest.toString());
 
     }
-//battle of the mids, also known as a mid-off (Eg: Leafs and Canadians fans arguing who's the better team)
+//Battle of the mids, also known as a mid-off (Eg: Leafs and Canadians fans arguing who's the better team)
     @Test
     public void testPlace() throws ParseException {
 
@@ -33,6 +33,26 @@ class BoardTest {
         boardTest.place(midmid, Token.X);
         assertFalse(boardTest.isEmptyAt(midmid),"Should not be empty in the middle cells");
     }
+
+
+    @Test
+    public void testIfFull(){
+        Board fullboard = new Board("OXOXXOXOX");
+        assertTrue(fullboard.isFull());
+        Board nullboard = new Board("---------");
+        assertFalse(nullboard.isFull());
+        Board partfull = new Board("OXOXXO--");
+        assertFalse(partfull.isFull());
+
+    }
+
+
+    @Test
+    public void testWinnerDiag(){
+
+        Board oWinLeftDiag = new Board ("OXX");
+    }
+
 
 
 
