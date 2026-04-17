@@ -50,8 +50,21 @@ class BoardTest {
     @Test
     public void testWinnerDiag(){
 
-        Board oWinLeftDiag = new Board ("OXX");
+        Board oWinLeftDiag = new Board ("OXX\nXO-\n-XO");
+        assertEquals(Token.O, oWinLeftDiag.getWinner().get(), ("A row of Os in the left diagonal should have returned O as the winner, but it returned %s").formatted(oWinLeftDiag.getWinner().get()));
+
+
+        Board oWinRightDiag = new Board("-XO\n-OX\nOXO");
+        assertEquals(Token.O, oWinRightDiag.getWinner().get(), ("A row of Os in the right diagonal should have returned O as the winner, but it returned %s").formatted(oWinRightDiag.getWinner().get()));
+
+        Board xWinLeftDiag =  new Board("X-O\nXXO\n-OX");
+        assertEquals(Token.X, xWinLeftDiag.getWinner().get(), ("A row of Xs in the left diagonal should have returned X as the winner, but it returned %s").formatted(xWinLeftDiag.getWinner().get()));
+
+        Board xWinRightDiag = new Board("O-X\n-XO\nXO-");
+        assertEquals(Token.X, xWinRightDiag.getWinner().get(), ("A row of Xs in the right diagonal should have returned X as the winner, but it returned %s").formatted(xWinRightDiag.getWinner().get()));
+
     }
+
 
 
 
